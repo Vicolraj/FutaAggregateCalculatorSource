@@ -1,0 +1,252 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+<section class="dialogueContainer" style="display: @firstDialog">
+    <div>
+        <img src="img/mark.gif" >
+        <div class="form">
+            <p for="name">Hello, am Mark, What's your name?</p>
+            <input id="name" Placeholder="Your Name?" @bind-value:event = "oninput" @bind-value="person.Name"/>
+            <br />
+            <span class="warning">@warning</span> <br />
+            <button type="button" @onclick="Close1st">Enter</button>
+        </div>
+    </div>
+</section>
+    
+<main class="main">
+    <div class="ads">
+                
+        <script type="text/javascript">
+                atOptions = {
+                    'key' : 'db03b628ca370f39c7a0c9b0c3410f8e',
+                    'format' : 'iframe',
+                    'height' : 60,
+                    'width' : 468,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.topcreativeformat.com/db03b628ca370f39c7a0c9b0c3410f8e/invoke.js">
+        </script>
+
+
+    </div>
+
+    <br />
+    <div class="imgData">
+        <img src="img/data.gif" >
+    </div>
+    <h3>Welcome @person.Name</h3>
+        
+        
+        
+        <div class="formContainer">
+            <div class="from">
+                <table>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    
+                    <tr>
+                    <td>English / Required Course 1</td>
+                        <td>
+                        <select  @bind="person.Grade1">
+                           <option value="80">A1</option>
+                           <option value="72">B2</option>
+                           <option value="67">B3</option>
+                           <option value="62">C4</option>
+                           <option value="57">C5</option>
+                           <option value="52">C6</option>
+                          </select>
+                        </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                    <td>Math / Required Course 2</td>
+                        <td>
+                        <select @bind="person.Grade2">
+                           <option value="80">A1</option>
+                           <option value="72">B2</option>
+                           <option value="67">B3</option>
+                           <option value="62">C4</option>
+                            <option value="57">C5</option>
+                           <option value="52">C6</option>
+                          </select>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>Required Course 3</td>
+                        <td>
+                        <select @bind="person.Grade3">
+                           <option value="80">A1</option>
+                           <option value="72">B2</option>
+                            <option  value="67">B3</option>
+                           <option value="62">C4</option>
+                           <option value="57">C5</option>
+                           <option value="52">C6</option>
+                          </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                    <td>Required Course 4</td>
+                        <td>
+                        <select @bind="person.Grade4">
+                           <option value="80">A1</option>
+                            <option value="72">B2</option>
+                           <option value="67">B3</option>
+                           <option value="62">C4</option>
+                           <option value="57">C5</option>
+                           <option value="52">C6</option>
+                          </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Required Course 5</td >
+                        <td>
+                        <select @bind="person.Grade5">
+                           <option value="80">A1</option>
+                           <option value="72">B2</option>
+                           <option value="67">B3</option>
+                           <option value="62">C4</option>
+                           <option value="57">C5</option>
+                            <option value="52">C6</option>
+                          </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jamb Score</td> 
+                        <td>
+                            <input style="text-align: center; width: 70px;"
+                                    type="number" 
+                                    min="180" 
+                                    max="400" 
+                                    @bind="Aspirant.jamb" 
+                                    @bind:event = "oninput"  />
+                        </td>
+                    </tr>
+                </table>
+                
+                <div class="formBtns">
+                <button type="submit" @onclick="Calculate">Calculate</button>
+                </div>
+                <div class="warning" style="text-align: center">@warning</div>
+            </div>
+            
+            
+        </div>
+        
+    </main>
+    
+  <section class="dialogueContainer" style="display: @secondDialog">
+        <div>
+            <img src="img/cup.gif" >
+           
+            <div class="form">
+                 <p for="name">Congrats @person.Name</p>
+                <p>Your Aggregate is <b>@person.Score<span>%</span></b> </p>
+                <button @onclick = "@(() => secondDialog = "none")">Ok</button>
+            </div>
+        </div>
+    </section>
+   <footer>
+            <article>
+        <p> &copy; 2024, TMD x Vicolraj</p>
+        <br />
+        <div class="ads">
+            <script type="text/javascript">
+                atOptions = {
+                    'key': 'db03b628ca370f39c7a0c9b0c3410f8e',
+                    'format': 'iframe',
+                    'height': 60,
+                    'width': 468,
+                    'params': {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.topcreativeformat.com/db03b628ca370f39c7a0c9b0c3410f8e/invoke.js">
+            </script>
+        </div>
+            </article>
+            
+   </footer>
+
+
+
+@code{
+    string firstDialog = "auto";
+    string secondDialog = "none";
+    string warning = "Brought to you by TMD, developed by Vicolraj";
+
+
+
+    Aspirant person;
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        person = new Aspirant();
+    }
+
+
+
+    class Aspirant
+    {
+        public string Name = "";
+        public double Grade1 = 80D;
+        public double Grade2 = 80D;
+        public double Grade3 = 80D;
+        public double Grade4 = 80D;
+        public double Grade5 = 80D;
+        public double Grade6 = 80D;
+        public static int jamb = 180;
+        public double UTME;
+        public double Score;
+
+        public void  score()
+        {
+            double gradeSum = Grade1 + Grade2 + Grade3 + Grade4 + Grade5;
+            gradeSum = (gradeSum / 5D) / 100D;
+            gradeSum *= 25D;
+
+            UTME = (double) (jamb / 400D) * 75D;
+
+            Score = UTME + gradeSum;
+            Score = Math.Round(Score, 2);
+        }
+    }
+
+    void Close1st()
+    {
+        if(person.Name.Trim() == "")
+        {
+            warning = "Please input your name";
+        }
+        else
+        {
+            firstDialog = "none";
+            warning = "Brought to you by TMD, developed by Vicolraj";
+        }
+    }
+
+    void Calculate()
+    {
+        if (Aspirant.jamb < 1)
+        {
+            warning = "Please input your UTME Score";
+        }
+        else if (Aspirant.jamb > 400)
+        {
+            warning = "Your Jamb Score is greater than 400";
+        }
+        else
+        {
+            person.score();
+            secondDialog = "auto";
+            warning = "Brought to you by TMD, developed by Vicolraj";
+        }
+    }
+
+
+}
