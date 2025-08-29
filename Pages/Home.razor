@@ -1,4 +1,5 @@
 ﻿@page "/"
+@page "/home"
 
 <PageTitle>Home</PageTitle>
 <section class="dialogueContainer" style="display: @firstDialog">
@@ -154,7 +155,7 @@
     </section>
    <footer>
             <article>
-        <p> &copy; 2024, TMD x Vicolraj</p>
+        <p> &copy; 2024, Vicolraj</p>
         <br />
         <div class="ads">
             <script type="text/javascript">
@@ -178,7 +179,7 @@
 @code{
     string firstDialog = "auto";
     string secondDialog = "none";
-    string warning = "Brought to you by TMD, developed by Vicolraj";
+    string warning = "Developed by Vicolraj";
 
 
 
@@ -226,7 +227,7 @@
         else
         {
             firstDialog = "none";
-            warning = "Brought to you by TMD, developed by Vicolraj";
+            warning = "Developed by Vicolraj";
         }
     }
 
@@ -244,7 +245,7 @@
         {
             person.score();
             secondDialog = "auto";
-            warning = "Brought to you by TMD, developed by Vicolraj";
+            warning = "Developed by Vicolraj";
         }
     }
 

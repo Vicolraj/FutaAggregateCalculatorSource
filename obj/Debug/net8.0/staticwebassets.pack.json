@@ -1,0 +1,85 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\obj\\Debug\\net8.0\\compressed\\0oxu2jk6yf.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FutaAggregateCalculator.styles.css",
+      "PackagePath": "staticwebassets\\FutaAggregateCalculator.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\obj\\Debug\\net8.0\\service-worker-assets.js",
+      "PackagePath": "staticwebassets\\service-worker-assets.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\obj\\Debug\\net8.0\\service-worker\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\wwwroot\\img\\cup.gif",
+      "PackagePath": "staticwebassets\\img\\cup.gif"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\wwwroot\\img\\data.gif",
+      "PackagePath": "staticwebassets\\img\\data.gif"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\wwwroot\\img\\fnf.gif",
+      "PackagePath": "staticwebassets\\img\\fnf.gif"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\wwwroot\\img\\mark.gif",
+      "PackagePath": "staticwebassets\\img\\mark.gif"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\wwwroot\\manifest.webmanifest",
+      "PackagePath": "staticwebassets\\manifest.webmanifest"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Projects\\Web Assembly Projects\\FutaAggregateCalculator\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FutaAggregateCalculator.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FutaAggregateCalculator.props",
+      "PackagePath": "build\\FutaAggregateCalculator.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FutaAggregateCalculator.props",
+      "PackagePath": "buildMultiTargeting\\FutaAggregateCalculator.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FutaAggregateCalculator.props",
+      "PackagePath": "buildTransitive\\FutaAggregateCalculator.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
